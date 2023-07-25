@@ -22,7 +22,7 @@ const Post = ({ post }) => {
       desc: desc
     };
 
-    await axios.patch(`/api/posts/${post.id}`, newPost)
+    await axios.patch(`https://crud-next-tan.vercel.app/api/posts/${post.id}`, newPost)
     .then(res => {
       console.log(res.data);
     })
@@ -39,7 +39,7 @@ const Post = ({ post }) => {
 
   const deletePostHandler = async (id) => {
     await axios
-    .delete(`/api/posts/${id}`)
+    .delete(`https://crud-next-tan.vercel.app/api/posts/${id}`)
     .then((res) => {
       console.log(res.data);
     })
