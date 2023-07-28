@@ -11,7 +11,7 @@ const Crud = () => {
 
         const getData = async () => {
             try {
-                const res = await axios.get('https://crud-next-tan.vercel.app/api/posts');
+                const res = await axios.get('/api/posts');
                 setPosts(res.data);
             } catch (error) {
                 console.error("Failed to fetch data", error);
