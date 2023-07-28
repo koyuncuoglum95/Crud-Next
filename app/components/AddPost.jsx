@@ -20,7 +20,7 @@ const AddPost = () => {
       desc: desc
     };
 
-    await axios.post('https://crud-next-tan.vercel.app/api/posts', newPost)
+    await axios.post('/api/posts', newPost)
     .then(res => {
       console.log(res.data);
     })
