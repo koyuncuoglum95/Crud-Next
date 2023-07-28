@@ -22,7 +22,7 @@ const Post = ({ post }) => {
       desc: desc
     };
 
-    await axios.patch(`https://crud-next-tan.vercel.app/api/posts/${post.id}`, newPost)
+    await axios.patch(`/api/posts/${post.id}`, newPost)
     .then(res => {
       console.log(res.data);
     })
