@@ -39,7 +39,7 @@ const Post = ({ post }) => {
 
   const deletePostHandler = async (id) => {
     await axios
-    .delete(`https://crud-next-tan.vercel.app/api/posts/${id}`)
+    .delete(`/api/posts/${id}`)
     .then((res) => {
       console.log(res.data);
     })
